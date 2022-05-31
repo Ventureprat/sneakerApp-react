@@ -1,0 +1,71 @@
+:root{
+    --primary-Orange: hsl(26, 100%, 55%);
+    --primary-Pale-orange: hsl(25, 100%, 94%);
+    --neutral-Very-dark-blue: hsl(220, 13%, 13%);
+    --neutral-Dark-grayish-blue: hsl(219, 9%, 45%);
+    --neutral-Grayish-blue: hsl(220, 14%, 75%);
+    --neutral-Light-grayish-blue: hsl(223, 64%, 98%);
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-Black: hsla(0, 0%, 0%,0.25);
+  
+  
+    --font-Size:16px;
+    --font-Family: 'Kumbh Sans', sans-serif;
+  }
+
+.TextComponent{
+    width: 20rem;
+    margin: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  .TextComponent-headingComp{
+    color: var(--primary-Orange);
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  
+  }
+  
+  .TextComponent-heading{
+    color: var(--neutral-Very-dark-blue);
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .TextComponent-paraText{
+    font-size: .9rem;
+    color: var(--neutral-Dark-grayish-blue);
+    margin-bottom: 1rem;
+    color: var(--);
+  }
+  
+  .TextComponent-price{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .TextComponent-discountPrice{
+    margin-right:1rem;
+  }
+  .TextComponent-percentageOff{
+    background-color: var(--primary-Pale-orange);
+    color: var(--primary-Orange);
+    font-family: var(--font-Family);
+    font-weight: 800;
+    height: fit-content;
+    padding: .3rem;
+    border-radius: 4px;
+    
+  }
+  .TextComponent-originalPrice{
+     margin-left: 7rem;
+     font-weight: 700;
+     color: var(--neutral-Grayish-blue);
+     text-decoration: line-through;
+  }
+  .TextComponent-percentageOff,.TextComponent-originalPrice{
+    position: relative;
+    top: .2rem;
+  }

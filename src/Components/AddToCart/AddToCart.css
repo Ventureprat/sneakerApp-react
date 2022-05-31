@@ -1,0 +1,58 @@
+:root{
+    --primary-Orange: hsl(26, 100%, 55%);
+    --primary-Pale-orange: hsl(25, 100%, 94%);
+    --neutral-Very-dark-blue: hsl(220, 13%, 13%);
+    --neutral-Dark-grayish-blue: hsl(219, 9%, 45%);
+    --neutral-Grayish-blue: hsl(220, 14%, 75%);
+    --neutral-Light-grayish-blue: hsl(223, 64%, 98%);
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-Black: hsla(0, 0%, 0%,0.25);
+  
+  
+    --font-Size:16px;
+    --font-Family: 'Kumbh Sans', sans-serif;
+  }
+
+.addToCart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+  .addToCart-counter{
+    width: 100%;
+    
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neutral-Light-grayish-blue);
+    height: 4rem;
+    border-radius: 1rem;
+  }
+  .addToCart-quantityCounter{
+    font-weight: 700;
+    padding: 0rem 7rem;
+    
+  }
+  
+  .addToCart-btn-addCart{
+    background-color: var(--primary-Orange);
+    color: var(--neutral-White);
+    border: none;
+    height: 3rem;
+    border-radius: .6rem;
+    font-family: var(--font-Family);
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  
+  .addToCart-cartIcon{
+    width: 1rem;
+    height: 1rem;
+  }

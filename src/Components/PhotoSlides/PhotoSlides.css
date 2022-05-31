@@ -1,0 +1,42 @@
+:root{
+    --primary-Orange: hsl(26, 100%, 55%);
+    --primary-Pale-orange: hsl(25, 100%, 94%);
+    --neutral-Very-dark-blue: hsl(220, 13%, 13%);
+    --neutral-Dark-grayish-blue: hsl(219, 9%, 45%);
+    --neutral-Grayish-blue: hsl(220, 14%, 75%);
+    --neutral-Light-grayish-blue: hsl(223, 64%, 98%);
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-Black: hsla(0, 0%, 0%,0.25);
+  
+  
+    --font-Size:16px;
+    --font-Family: 'Kumbh Sans', sans-serif;
+  }
+
+.photoSlides{
+    width: 100%;
+    height:57vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-image: url("../../images/image-product-1.jpg");
+  }
+  
+  .photoSlides-arrow{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--neutral-White);
+    background-repeat: no-repeat;
+    padding-left: .7rem;
+    padding-top: .6rem;
+   
+  }
+  
+  .photoSlides-rightArrow{
+    padding-left: .9rem;
+    position: relative;
+    left: 20rem;
+  }

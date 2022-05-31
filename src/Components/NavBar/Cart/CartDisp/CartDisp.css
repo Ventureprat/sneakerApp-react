@@ -1,0 +1,102 @@
+:root{
+    --primary-Orange: hsl(26, 100%, 55%);
+    --primary-Pale-orange: hsl(25, 100%, 94%);
+    --neutral-Very-dark-blue: hsl(220, 13%, 13%);
+    --neutral-Dark-grayish-blue: hsl(219, 9%, 45%);
+    --neutral-Grayish-blue: hsl(220, 14%, 75%);
+    --neutral-Light-grayish-blue: hsl(223, 64%, 98%);
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-Black: hsla(0, 0%, 0%,0.25);
+  
+  
+    --font-Size:16px;
+    --font-Family: 'Kumbh Sans', sans-serif;
+  }
+
+
+.cartDispContainer{
+    width: 95%;
+    height: 21rem;
+    background-color: var(--neutral-White);
+    position: absolute;
+    top: 6rem;
+    left: .5rem;
+    padding-top: 2rem;
+    border-radius: 10px;
+    z-index: 999;
+  }
+  
+  #cartDispContainer-cartText{
+    font-family: var(--font-Family);
+    font-weight: 900;
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  .cartDispContainer-cartHoriLine{
+    background-color: var(--neutral-Grayish-blue);
+  }
+  
+  .cartDispContainer-totalpriceDisp{
+    margin-top: 2rem;
+    margin-left:2rem;
+    margin-bottom:2rem;
+    display: flex;
+    gap: 1rem;
+  
+  }
+  .cartDispContainer-imageIcon{
+    background-image: url('../../../../images/image-product-1-thumbnail.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 4px;
+    
+  }
+  .cartDispContainer-priceDisp{
+    position: relative;
+    top: 1rem;
+  }
+  
+  .cartDispContainer-textCart,.cartDispContainer-amountCart{
+    color: var(--neutral-Dark-grayish-blue);
+    font-family: var(--font-Family);
+  }
+  
+  .cartDispContainer-textCart{
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+  }
+  
+  .cartDispContainer-priceAmountBold{
+    color: var(--neutral-Very-dark-blue);
+    font-weight: 900;
+  }
+  
+  
+  .cartDispContainer-cartDeleteIcon{
+    width: .9rem;
+    height: 1.2rem;
+    position: relative;
+    top: 2.2rem;
+    left: .5rem;
+  }
+  
+  .cartDispContainer-cartCheckout{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    width: 80%;
+    height: 3.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-Orange);
+    color: var(--neutral-White);
+    font-family: var(--font-Family);
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+  }
+  
+  

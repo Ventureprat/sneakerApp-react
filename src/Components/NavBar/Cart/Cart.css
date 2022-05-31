@@ -1,0 +1,34 @@
+:root{
+    --primary-Orange: hsl(26, 100%, 55%);
+    --primary-Pale-orange: hsl(25, 100%, 94%);
+    --neutral-Very-dark-blue: hsl(220, 13%, 13%);
+    --neutral-Dark-grayish-blue: hsl(219, 9%, 45%);
+    --neutral-Grayish-blue: hsl(220, 14%, 75%);
+    --neutral-Light-grayish-blue: hsl(223, 64%, 98%);
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-Black: hsla(0, 0%, 0%,0.25);
+  
+  
+    --font-Size:16px;
+    --font-Family: 'Kumbh Sans', sans-serif;
+  }
+
+.cartContainer-cartImage{
+    height: 1.4rem;
+    background-image: url("../../../images/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 1rem;
+  }
+  
+  .cartContainer-quantityShow{
+    width: 1.3rem;
+    background-color: var(--primary-Orange);
+    border-radius: 45%;
+    text-align: center;
+    font-size: .7rem;
+    color: var(--neutral-White);
+    position: relative;
+    top: -.5rem;
+    left: .9rem;
+  }

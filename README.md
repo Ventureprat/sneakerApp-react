@@ -1,2 +1,2 @@
 # sneakerApp-react
-A Model Sneaker App made wtih React and Love.
+A Model Sneaker App made wtih React(Vite) and Love.

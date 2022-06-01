@@ -8,7 +8,7 @@ import "./CartDisp.css";
 export default function CartDisp(props) {
   const quantityNavBar = useContext(navBarData);
 
-  if (props.cartDispVisibility) {
+  if (props.cartDispVisibility && quantityNavBar > 0) {
     return (
       <div className="cartDispContainer">
         <h3 id="cartDispContainer-cartText">Cart</h3>
@@ -34,6 +34,14 @@ export default function CartDisp(props) {
           />
         </div>
         <button className="cartDispContainer-cartCheckout">Checkout</button>
+      </div>
+    );
+  } else if (props.cartDispVisibility && quantityNavBar === 0) {
+    return (
+      <div className="cartDispContainer">
+        <h3 id="cartDispContainer-cartText">Cart</h3>
+        <hr className="cartDispContainer-cartHoriLine" />
+        <h1 className="cartDispContainer-emptyCart">Your cart is empty.</h1>
       </div>
     );
   }

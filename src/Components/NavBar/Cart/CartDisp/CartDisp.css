@@ -3,7 +3,7 @@
     --primary-Pale-orange: hsl(25, 100%, 94%);
     --neutral-Very-dark-blue: hsl(220, 13%, 13%);
     --neutral-Dark-grayish-blue: hsl(219, 9%, 45%);
-    --neutral-Grayish-blue: hsl(220, 14%, 75%);
+    --netural-Grayish-blue: hsl(220, 14%, 75%);
     --neutral-Light-grayish-blue: hsl(223, 64%, 98%);
     --neutral-White: hsl(0, 0%, 100%);
     --neutral-Black: hsla(0, 0%, 0%,0.25);
@@ -97,6 +97,14 @@
     font-size: .9rem;
     font-weight: 600;
     letter-spacing: .1rem;
+  }
+
+  .cartDispContainer-emptyCart{
+      text-align: center;
+      margin-top: 5rem;
+      font-size: .8rem;
+      font-family: var(--font-Family);
+      color: var(--neutral-Dark-grayish-blue);
   }
   
   

@@ -13,15 +13,11 @@
     --font-Family: 'Kumbh Sans', sans-serif;
   }
 
-.photoSlides{
+
+  .photoSlides-imageSlides{
     width: 100%;
     height:57vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    background-image: url("../../images/image-product-1.jpg");
+
   }
   
   .photoSlides-arrow{
@@ -37,6 +33,12 @@
   
   .photoSlides-rightArrow{
     padding-left: .9rem;
-    position: relative;
+    position: absolute;
     left: 20rem;
+    bottom: 24rem;
+  }
+  .photoSlides-leftArrow{
+    position: absolute;
+    left: 1rem;
+    bottom: 23.5rem;
   }

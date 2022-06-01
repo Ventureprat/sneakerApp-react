@@ -7,7 +7,6 @@ import "./Cart.css";
 export default function Cart() {
   const [visibleCart, setVisibleCart] = useState(false);
   const quantityNavBar = useContext(navBarData);
-  console.log(quantityNavBar);
 
   return (
     <div className="cartContainer">

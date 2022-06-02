@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { navBarData } from "../../../../App";
+import { navBarData } from "../../../../Pages/Home";
 
 import deleteIcon from "../../../../images/icon-delete.svg";
 

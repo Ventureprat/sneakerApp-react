@@ -1,30 +1,26 @@
 import "./App.css";
-import { useState, createContext } from "react";
 
-import NavBar from "./Components/NavBar/NavBar";
-import AddTocart from "./Components/AddToCart/AddToCart";
-import PhotoSlides from "./Components/PhotoSlides/PhotoSlides";
-import SneakerText from "./Components/SneakerText/SneakerText";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-export const navBarData = createContext();
+import Home from "../src/Pages/Home";
+import Collections from "../src/Pages/Collections";
+import About from "../src/Pages/About";
+import Contact from "../src/Pages/Contact";
+import Men from "../src/Pages/Men";
+import Women from "../src/Pages/Women";
 
 function App() {
-  const [valueQuant, setValuequant] = useState(0);
-
-  const onpassFunc = (data) => {
-    setValuequant(data);
-  };
-
   return (
-    <div className="app-container">
-      <navBarData.Provider value={valueQuant}>
-        <NavBar />
-      </navBarData.Provider>
-      <PhotoSlides />
-      <SneakerText />
-      <AddTocart onpass={(value) => onpassFunc(value)} />;
-      {/* passing state from child{AddToCart.js} to parent component{App.js} by passing in a callback function as a prop   */}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="Collections" element={<Collections />} />
+        <Route path="About" element={<About />} />
+        <Route path="Contact" element={<Contact />} />
+        <Route path="Men" element={<Men />} />
+        <Route path="Women" element={<Women />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -21,11 +21,10 @@
     gap: 1rem;
   }
   
-  .navBar-lines{
-    width: 1.5rem;
-    height: .3rem;
-    background-color: var(--neutral-Dark-grayish-blue);
-    margin: .2rem;
+  .navBar-menuImage{
+    position: relative;
+    top:0.1rem;
+    right: .3rem;
   }
   
   .navBar-logoImage{

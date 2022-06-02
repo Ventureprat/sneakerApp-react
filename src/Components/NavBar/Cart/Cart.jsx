@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import CartDisp from "./CartDisp/CartDisp";
-import { navBarData } from "../../../App";
+import { navBarData } from "../../../Pages/Home";
 
 import "./Cart.css";
 

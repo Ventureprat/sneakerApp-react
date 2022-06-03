@@ -42,3 +42,12 @@
     left: 1rem;
     bottom: 23.5rem;
   }
+
+  @media screen and (min-width:1200px) {
+
+    .photoSlides-arrow{
+      display: none;
+    }
+
+    
+  }

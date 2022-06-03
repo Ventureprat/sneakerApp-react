@@ -32,3 +32,15 @@
     top: -.5rem;
     left: .9rem;
   }
+
+  @media screen and (min-width:1200px) {
+
+    .cartContainer-cartImage{
+      position: absolute;
+      right: 14rem;
+      top: 2rem;
+    }
+
+
+    
+  }

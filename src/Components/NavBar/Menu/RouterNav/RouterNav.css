@@ -1,0 +1,60 @@
+:root{
+    --primary-Orange: hsl(26, 100%, 55%);
+    --primary-Pale-orange: hsl(25, 100%, 94%);
+    --neutral-Very-dark-blue: hsl(220, 13%, 13%);
+    --neutral-Dark-grayish-blue: hsl(219, 9%, 45%);
+    --neutral-Grayish-blue: hsl(220, 14%, 75%);
+    --neutral-Light-grayish-blue: hsl(223, 64%, 98%);
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-Black: hsla(0, 0%, 0%,0.25);
+  
+  
+    --font-Size:16px;
+    --font-Family: 'Kumbh Sans', sans-serif;
+  }
+
+  /*Mobile View*/
+
+  .routerNav-linkList-MV{
+      position: relative;
+      top: 4rem;
+      list-style-type: none;
+          
+    }
+    .routerNav-links-MV{
+        margin-bottom: 1rem;
+        
+    }
+
+    .routerNav-link-MV{
+        color: var(--neutral-Very-dark-blue);
+        font-size:15px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 700;
+    }
+
+    /*Desktop View*/
+   
+    .routerNav-linkList-DV{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        gap: 1rem;
+        position: absolute;
+        top: 2rem;
+        left: 20rem;
+
+    }
+
+    .routerNav-link-DV{
+        font-size: 14px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        color: var(--neutral-Dark-grayish-blue);
+        
+    }
+    .routerNav-link-DV:hover{
+        border-bottom-style: solid;
+        border-bottom-color:var(--primary-Orange) ;
+    }
+ 

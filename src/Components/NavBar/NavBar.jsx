@@ -2,6 +2,7 @@ import { useState } from "react";
 import Cart from "./Cart/Cart";
 import "./NavBar.css";
 import Menu from "./Menu/Menu";
+import RouterNav from "./Menu/RouterNav/RouterNav";
 
 import menuImage from "../../images/icon-menu.svg";
 
@@ -27,6 +28,10 @@ export default function NavBar() {
         <div className="navBar-profilePic"></div>
       </div>
       <Menu menuVisibility={menuVisibility} visibilityFunc={visibility} />
+
+      <div className="navBar-routerNav">
+        <RouterNav classN={"desktopView"} />
+      </div>
     </>
   );
 }

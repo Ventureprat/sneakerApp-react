@@ -43,3 +43,31 @@
     background-size: contain;
     border-radius: 50%;
   }
+
+  .navBar-routerNav{
+    display: none;
+  }
+
+
+  @media screen and (min-width:1200px) {
+
+    .navBar-menuImage{
+      display: none;
+    }
+
+    .navBar-logoImage{
+      position: absolute;
+      left: 10rem;
+
+    }
+    .navBar-profilePic{
+      position: absolute;
+      right: 10rem;
+    }
+
+    .navBar-routerNav{
+      display:block
+    }
+
+    
+  }

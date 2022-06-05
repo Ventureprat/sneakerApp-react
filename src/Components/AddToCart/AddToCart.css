@@ -56,3 +56,34 @@
     width: 1rem;
     height: 1rem;
   }
+
+  @media screen and (min-width:1200px) {
+    .addToCart{
+      width: 21rem;
+      display: flex;
+      flex-direction: row;
+      gap: .7rem;
+      position: absolute;
+      top: 30rem;
+      left: 56rem;
+    }
+    .addToCart-counter{
+      width: 40%;
+      height: 3rem;
+    }
+    .addToCart-btn-addCart{
+      width: 48%;
+      height: 3rem;
+    }
+    .addToCart-btn-plus{
+      position: relative;
+      right: 4.5rem;
+
+    }
+    .addToCart-btn-minus{
+      position: relative;
+      left: 4.5rem;
+
+    }
+    
+  }

@@ -13,6 +13,8 @@ export default function PhotoSlides() {
   let arrImages = [product1, product2, product3, product4];
   const [imageInd, setImageInd] = useState(0);
 
+  const [showIMG, setShowIMG] = useState(0);
+
   const moveRight = () => {
     setImageInd((prev) => {
       if (prev === 3) {
@@ -31,12 +33,35 @@ export default function PhotoSlides() {
   };
 
   return (
+    // For Mobile View - 376px
+
     <div className="photoSlides">
       <img
         src={arrImages[imageInd]}
         alt="Sneaker Image"
         className="photoSlides-imageSlides"
       />
+      {/* For Desktop View - Image Slides */}
+      <img
+        src={arrImages[showIMG]}
+        alt="Sneaker Image"
+        className="photoSlides-imageSlides-DV"
+      />
+      <div className="photoSlides-soloImages">
+        {arrImages.map((image, ind) => {
+          return (
+            <img
+              key={ind}
+              src={image}
+              alt="Sneaker images"
+              className="photoSlides-image"
+              onClick={() => {
+                setShowIMG(ind);
+              }}
+            />
+          );
+        })}
+      </div>
       <div
         className="photoSlides-arrow photoSlides-rightArrow"
         onClick={moveRight}

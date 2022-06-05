@@ -69,3 +69,10 @@
     position: relative;
     top: .2rem;
   }
+
+  @media screen and (min-width:1200px) {
+    .TextComponent{
+      position: relative;
+      bottom: 5rem;
+    }
+  }

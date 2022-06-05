@@ -28,8 +28,8 @@
   
   #cartDispContainer-cartText{
     font-family: var(--font-Family);
-    font-weight: 900;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: .9rem;
     margin-left: 2rem;
     margin-bottom: 2rem;
   }
@@ -107,4 +107,29 @@
       color: var(--neutral-Dark-grayish-blue);
   }
   
+  @media screen and (min-width:1200px) {
+
+    .cartDispContainer{
+      width: 23%;
+      height:13.5rem;
+      top:4.7rem;
+      left:65rem;
+      padding-top: 1rem;
+      box-shadow: 6px 6px 29px -8px rgba(0,0,0,0.75);
+    }
+
+    #cartDispContainer-cartText{
+      margin-bottom: 1rem;
+    }
+  
+    .cartDispContainer-totalpriceDisp{
+      margin-top: 1rem;
+      margin-bottom: .5rem;
+    }
+    .cartDispContainer-cartCheckout{
+      margin-top: 0;
+    }
+
+    
+  }
   

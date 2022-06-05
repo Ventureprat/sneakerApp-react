@@ -19,6 +19,10 @@
     height:57vh;
 
   }
+
+  .photoSlides-soloImages{
+    display: none;
+  }
   
   .photoSlides-arrow{
     width: 2.5rem;
@@ -42,11 +46,43 @@
     left: 1rem;
     bottom: 23.5rem;
   }
+  .photoSlides-imageSlides-DV{
+    display: none;
+  }
 
   @media screen and (min-width:1200px) {
+    .photoSlides{
+      width: 30rem;
+      height: 33rem;
+    }
+    .photoSlides-imageSlides-DV{
+        display: block;
+        width: 100%;
+        height: 25rem;
+        border-radius: 1rem;
+    }
+    .photoSlides-imageSlides{
+      display: none;
+    }
 
     .photoSlides-arrow{
       display: none;
+    }
+
+    .photoSlides-soloImages{
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      width: 25rem;
+      cursor: pointer;
+    }
+
+    .photoSlides-image{
+      margin-top: 2rem;
+      width: 6rem;
+      height: 6rem;
+      background-size:100% 100% ;
+      border-radius: 1rem;
     }
 
     

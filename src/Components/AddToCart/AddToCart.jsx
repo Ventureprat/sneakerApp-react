@@ -21,14 +21,14 @@ export default function AddTocart(props) {
           className="addToCart-updateQuantity"
           onClick={() => setQuantity(quantity - 1)}
         >
-          <img src={minus} alt="minus" />
+          <img src={minus} alt="minus" className="addToCart-btn-minus" />
         </span>
         <div className="addToCart-quantityCounter">{quantity}</div>
         <span
           className="addToCart-updateQuantity"
           onClick={() => setQuantity(quantity + 1)}
         >
-          <img src={plus} alt="plus" />
+          <img src={plus} alt="plus" className="addToCart-btn-plus" />
         </span>
       </div>
       <button className="addToCart-btn-addCart" onClick={handleClick}>

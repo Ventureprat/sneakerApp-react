@@ -11,7 +11,9 @@ import product4 from "../../images/image-product-4.jpg";
 
 export default function PhotoSlides() {
   let arrImages = [product1, product2, product3, product4];
+
   const [imageInd, setImageInd] = useState(0);
+  const [etarget, setETarget] = useState();
 
   const [showIMG, setShowIMG] = useState(0);
 
@@ -32,16 +34,19 @@ export default function PhotoSlides() {
     });
   };
 
-  return (
-    // For Mobile View - 376px
+  let ind1 = 0;
 
+  return (
     <div className="photoSlides">
+      {/* For Mobile View - 376px */}
+
       <img
         src={arrImages[imageInd]}
         alt="Sneaker Image"
         className="photoSlides-imageSlides"
       />
       {/* For Desktop View - Image Slides */}
+
       <img
         src={arrImages[showIMG]}
         alt="Sneaker Image"
@@ -55,8 +60,17 @@ export default function PhotoSlides() {
               src={image}
               alt="Sneaker images"
               className="photoSlides-image"
-              onClick={() => {
+              onClick={(e) => {
                 setShowIMG(ind);
+                e.target.className += " photoSlides-activeClass";
+                if (ind !== ind1) {
+                  setETarget(e);
+
+                  if (etarget != undefined)
+                    etarget.target.className = "photoSlides-image";
+
+                  ind1 = ind;
+                }
               }}
             />
           );

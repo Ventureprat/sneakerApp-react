@@ -85,5 +85,10 @@
       border-radius: 1rem;
     }
 
+    .photoSlides-activeClass{
+      opacity: 0.5;
+
+    }
+
     
   }

@@ -42,6 +42,7 @@
     height: 2rem;
     background-size: contain;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   .navBar-routerNav{

@@ -76,6 +76,7 @@
       width: 25rem;
       cursor: pointer;
     }
+   
 
     .photoSlides-image{
       margin-top: 2rem;
@@ -83,6 +84,9 @@
       height: 6rem;
       background-size:100% 100% ;
       border-radius: 1rem;
+    }
+    .photoSlides-image:hover{
+      opacity: 0.5;
     }
 
     .photoSlides-activeClass{

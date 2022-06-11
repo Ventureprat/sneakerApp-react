@@ -1,9 +1,10 @@
 import { useState } from "react";
-import previousArrow from "../../images/icon-previous.svg";
-import nextArrow from "../../images/icon-next.svg";
+import PhotoModal from "./PhotoModal/PhotoModal";
 
 import "./PhotoSlides.css";
 
+import previousArrow from "../../images/icon-previous.svg";
+import nextArrow from "../../images/icon-next.svg";
 import product1 from "../../images/image-product-1.jpg";
 import product2 from "../../images/image-product-2.jpg";
 import product3 from "../../images/image-product-3.jpg";
@@ -13,10 +14,7 @@ export default function PhotoSlides() {
   let arrImages = [product1, product2, product3, product4];
 
   const [imageInd, setImageInd] = useState(0);
-  const [etarget, setETarget] = useState();
-
-  const [showIMG, setShowIMG] = useState(0);
-
+  const [showModalBool, setShowModalBool] = useState(false);
   const moveRight = () => {
     setImageInd((prev) => {
       if (prev === 3) {
@@ -34,7 +32,9 @@ export default function PhotoSlides() {
     });
   };
 
-  let ind1 = 0;
+  const modalShowFunc = () => {
+    setShowModalBool((prev) => !prev);
+  };
 
   return (
     <div className="photoSlides">
@@ -48,7 +48,7 @@ export default function PhotoSlides() {
       {/* For Desktop View - Image Slides */}
 
       <img
-        src={arrImages[showIMG]}
+        src={arrImages[0]}
         alt="Sneaker Image"
         className="photoSlides-imageSlides-DV"
       />
@@ -60,22 +60,17 @@ export default function PhotoSlides() {
               src={image}
               alt="Sneaker images"
               className="photoSlides-image"
-              onClick={(e) => {
-                setShowIMG(ind);
-                e.target.className += " photoSlides-activeClass";
-                if (ind !== ind1) {
-                  setETarget(e);
-
-                  if (etarget != undefined)
-                    etarget.target.className = "photoSlides-image";
-
-                  ind1 = ind;
-                }
-              }}
+              onClick={modalShowFunc}
             />
           );
         })}
       </div>
+      {showModalBool ? (
+        <PhotoModal
+          showModalBool={showModalBool}
+          modalShowFunc={modalShowFunc}
+        />
+      ) : null}
       <div
         className="photoSlides-arrow photoSlides-rightArrow"
         onClick={moveRight}

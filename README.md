@@ -1,5 +1,5 @@
 # sneakerApp-react
-A Model Sneaker App made wtih React(Vite) and Love.
+A Model Sneaker App home page made wtih React(Vite) and Love.
 
 Mobile Size - min-width:376px
 Desktop Size - min-width: 1200px

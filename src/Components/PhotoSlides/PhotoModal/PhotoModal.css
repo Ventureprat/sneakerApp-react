@@ -62,13 +62,7 @@
       height: 25rem;
       border-radius: 1rem;
   }
-  .photoModal-imageSlides{
-    display: none;
-  }
 
-  .photoModal-arrow{
-    display: none;
-  }
 
   .photoModal-soloImages{
     display: flex;

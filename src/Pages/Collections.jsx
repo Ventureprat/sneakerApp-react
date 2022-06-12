@@ -22,7 +22,7 @@ export default function Collections() {
 
       <hr />
 
-      <h1>Collections Page</h1>
+      <h1>Hiiiiii...This is Collections Page</h1>
     </>
   );
 }
